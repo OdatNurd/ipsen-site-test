@@ -1,0 +1,12 @@
+{
+  "name": "ipsen",
+  "version": "1.0.0",
+  "description": "A test of the ipsen page generation beta",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Terence Martin",
+  "license": "MIT",
+  "dependencies": {
+    "@axel669/ipsen": "^0.4.0-beta.1"
+  }
+}

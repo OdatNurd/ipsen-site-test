@@ -1,0 +1,25 @@
+# The source markdown file that lists the contents of the site.
+source: _sidebar.md
+# The folder to save the generated files into.
+dest: site
+# Custom parsers for loading data out of files and into marked areas to make api
+# documentation easier, and allowing the api docs to stay in the code files.
+# Parsers starting with "@" will be loaded from the parsers available in Ipsen.
+# Each extension needs to be configured individually even if they use the same
+# parser.
+parsers:
+  mjs: "@js"
+  js: "@js"
+  cjs: "@js"
+  py: "@py"
+  yaml: "@yaml"
+  json: "@json"
+# The name of the template to use for generating the site. Names starting with
+# "@" will resolve to the templates provided by ipsen, any other name will be
+# resolved in the .ipsen/template folder in the project.
+# The template will always load the page.html file from the template folder and
+# use it to render the pages of the site.
+template: "@basic"
+# extra options available to the template as $.options. Any type of value allowed.
+options:
+  theme: dark
